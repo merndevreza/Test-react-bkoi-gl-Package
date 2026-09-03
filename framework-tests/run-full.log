@@ -1,0 +1,66 @@
+
+===== vite5 (vite5-react) =====
+PASS vite5/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS vite5/build+preview — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== vite6 (vite6-react) =====
+PASS vite6/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS vite6/build+preview — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== vite7 (vite7-react) =====
+PASS vite7/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS vite7/build+preview — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== viteYarn (vite-yarn) =====
+PASS viteYarn/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS viteYarn/build+preview — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== next15-webpack (next15-webpack) =====
+PASS next15-webpack/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS next15-webpack/build+start — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== next15-turbopack (next15-turbopack) =====
+PASS next15-turbopack/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS next15-turbopack/build+start — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== next16-webpack (next16-webpack) =====
+PASS next16-webpack/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS next16-webpack/build+start — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== next16-turbopack (next16-turbopack) =====
+PASS next16-turbopack/dev — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS next16-turbopack/build+start — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+
+===== cra (cra-react) =====
+PASS cra/build+serve — workers=1(200) ready=true idle=true missing=[] dom={canvas:true markers:2 popup:true custom:true} errors=0 draw=1
+PASS src/App.test.js
+  ✓ react-bkoi-gl resolves under Jest and exposes the documented exports (3 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.265 s
+Ran all test suites.
+
+===== SUMMARY =====
+PASS vite5/dev 
+PASS vite5/build+preview 
+PASS vite6/dev 
+PASS vite6/build+preview 
+PASS vite7/dev 
+PASS vite7/build+preview 
+PASS viteYarn/dev 
+PASS viteYarn/build+preview 
+PASS next15-webpack/dev 
+PASS next15-webpack/build+start 
+PASS next15-turbopack/dev 
+PASS next15-turbopack/build+start 
+PASS next16-webpack/dev 
+PASS next16-webpack/build+start 
+PASS next16-turbopack/dev 
+PASS next16-turbopack/build+start 
+FAIL cra/dev server did not come up
+PASS cra/build+serve 
+PASS cra/jest 
+
+[runner] RESULTS.md written — overall: FAIL

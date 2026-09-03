@@ -1,0 +1,63 @@
+{
+  "name": "vite7/dev",
+  "url": "http://localhost:6306/",
+  "ok": true,
+  "workers": [
+    "blob:http://localhost:6306/8398599f-2b0c-4a39-9147-6441234d9728"
+  ],
+  "workerStatus": [
+    200
+  ],
+  "ready": true,
+  "idle": true,
+  "showcase": {
+    "version6": true,
+    "logger": true,
+    "gpuError": true,
+    "customControl": true,
+    "marker": true,
+    "popup": true,
+    "sourceLayer": true,
+    "canvasSource": true,
+    "useMap": true,
+    "mapRef": true,
+    "terrain": true,
+    "globe": true,
+    "draw": true,
+    "minimap": true,
+    "drawCreate": 1,
+    "drawUpdate": 0,
+    "drawDelete": 0,
+    "warnings": [],
+    "errors": [
+      "Source layer \"office_11\" does not exist on source \"data\" as specified by style layer \"Barikoi Poi icons\"."
+    ]
+  },
+  "missing": [],
+  "dom": {
+    "canvas": true,
+    "markers": 2,
+    "popup": true,
+    "scale": true,
+    "attrib": true,
+    "logo": true,
+    "custom": true,
+    "sources": {
+      "points": true,
+      "dem": true,
+      "layer": true
+    }
+  },
+  "drawInteractive": 1,
+  "mapErrors": [
+    "Source layer \"office_11\" does not exist on source \"data\" as specified by style layer \"Barikoi Poi icons\"."
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "styleNoise": [
+    "Source layer \"office_11\" does not exist on source \"data\" as specified by style layer \"Barikoi Poi icons\"."
+  ],
+  "errors": []
+}

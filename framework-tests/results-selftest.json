@@ -1,0 +1,54 @@
+{
+  "name": "selftest",
+  "url": "http://localhost:6499/",
+  "ok": true,
+  "workers": [
+    "worker.js"
+  ],
+  "workerStatus": [
+    200
+  ],
+  "ready": true,
+  "idle": true,
+  "showcase": {
+    "version6": true,
+    "logger": true,
+    "gpuError": true,
+    "customControl": true,
+    "marker": true,
+    "popup": true,
+    "sourceLayer": true,
+    "canvasSource": true,
+    "useMap": true,
+    "mapRef": true,
+    "terrain": true,
+    "globe": true,
+    "draw": true,
+    "minimap": true,
+    "drawCreate": 0,
+    "drawUpdate": 0,
+    "drawDelete": 0,
+    "warnings": [],
+    "errors": []
+  },
+  "missing": [],
+  "dom": {
+    "canvas": true,
+    "markers": 1,
+    "popup": true,
+    "scale": true,
+    "attrib": true,
+    "logo": true,
+    "custom": true,
+    "sources": {
+      "points": true,
+      "dem": true,
+      "layer": true
+    }
+  },
+  "drawInteractive": "polygon-button-not-found",
+  "mapErrors": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "errors": []
+}

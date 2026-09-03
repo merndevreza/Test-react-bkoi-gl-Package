@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "react": "^18.3.1",
+    "react-bkoi-gl": "file:../framework-tests/tarballs/react-bkoi-gl-3.0.0.tgz",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {

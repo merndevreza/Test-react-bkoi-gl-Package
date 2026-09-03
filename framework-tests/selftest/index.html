@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+<script>
+  window.__SHOWCASE = {
+    version6: true, logger: true, gpuError: true, customControl: true,
+    marker: true, popup: true, sourceLayer: true, canvasSource: true,
+    useMap: true, mapRef: true, terrain: true, globe: true, draw: true,
+    minimap: true, drawCreate: 0, drawUpdate: 0, drawDelete: 0,
+    warnings: [], errors: []
+  }
+  window.__MAP = { getSource: () => ({}), getLayer: () => ({}) }
+  new Worker('worker.js')
+  setTimeout(() => { window.__READY = true; window.__IDLE = true }, 300)
+</script>
+<canvas class="maplibregl-canvas"></canvas>
+<div class="maplibregl-marker"></div>
+<div class="maplibregl-popup"></div>
+<div class="maplibregl-ctrl-scale"></div>
+<div class="maplibregl-ctrl-attrib"></div>
+<a class="maplibregl-ctrl-logo"></a>
+<div data-testid="custom-control"></div>
+</body>
+</html>

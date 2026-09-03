@@ -1,0 +1,61 @@
+{
+  "name": "next15-webpack/dev",
+  "url": "http://localhost:6312/",
+  "ok": true,
+  "workers": [
+    "blob:http://localhost:6312/6234ef36-6bea-4676-b8cd-df9427eed2b0"
+  ],
+  "workerStatus": [
+    200
+  ],
+  "ready": true,
+  "idle": true,
+  "showcase": {
+    "version6": true,
+    "logger": true,
+    "gpuError": true,
+    "customControl": true,
+    "marker": true,
+    "popup": true,
+    "sourceLayer": true,
+    "canvasSource": true,
+    "useMap": true,
+    "mapRef": true,
+    "terrain": true,
+    "globe": true,
+    "draw": true,
+    "minimap": true,
+    "drawCreate": 1,
+    "drawUpdate": 0,
+    "drawDelete": 0,
+    "warnings": [],
+    "errors": [
+      "Source layer \"office_11\" does not exist on source \"data\" as specified by style layer \"Barikoi Poi icons\"."
+    ]
+  },
+  "missing": [],
+  "dom": {
+    "canvas": true,
+    "markers": 2,
+    "popup": true,
+    "scale": true,
+    "attrib": true,
+    "logo": true,
+    "custom": true,
+    "sources": {
+      "points": true,
+      "dem": true,
+      "layer": true
+    }
+  },
+  "drawInteractive": 1,
+  "mapErrors": [
+    "Source layer \"office_11\" does not exist on source \"data\" as specified by style layer \"Barikoi Poi icons\"."
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "styleNoise": [
+    "Source layer \"office_11\" does not exist on source \"data\" as specified by style layer \"Barikoi Poi icons\"."
+  ],
+  "errors": []
+}
