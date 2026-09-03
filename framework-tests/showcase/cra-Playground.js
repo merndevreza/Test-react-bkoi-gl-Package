@@ -1,4 +1,4 @@
-// react-bkoi-gl v3 MANUAL playground — every public API, tabbed for hands-on testing.
+// react-bkoi-gl v3 MANUAL playground — CRA family (JS).
 // Tabs via URL hash (#map, #controls, #marker, #sources, #draw, #hooks).
 import { useEffect, useRef, useState } from 'react'
 import {
@@ -10,7 +10,7 @@ import {
 } from 'react-bkoi-gl'
 import 'react-bkoi-gl/styles'
 
-const API_KEY = import.meta.env.VITE_BARIKOI_API_KEY
+const API_KEY = process.env.REACT_APP_BARIKOI_API_KEY
 const STYLE_URL = `https://map.barikoi.com/styles/osm-liberty/style.json?key=${API_KEY}`
 const DHAKA = { longitude: 90.3938, latitude: 23.8216, zoom: 12 }
 const TERRARIUM = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'

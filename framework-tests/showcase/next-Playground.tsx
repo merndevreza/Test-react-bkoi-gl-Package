@@ -115,16 +115,15 @@ function MapTab() {
 
 // ---- tab 2: all controls -------------------------------------------------
 function ControlsTab() {
-  const geo = useRef<any>(null)
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
       <div className="map-ui" style={{ position: 'absolute', top: 30, left: 8, zIndex: 5, display: 'flex', gap: 6 }}>
-        <button onClick={() => geo.current?.trigger()}>geolocate.trigger()</button>
+        <span style={{ fontSize: 12 }}>open the geolocate button on the map (browser will prompt)</span>
       </div>
       <Map mapStyle={STYLE_URL} initialViewState={DHAKA} style={{ width: '100%', height: '100%' }}>
         <NavigationControl position="top-right" showCompass showZoom visualizePitch />
         <FullscreenControl position="top-right" />
-        <GeolocateControl ref={geo} position="top-right" trackUserLocation showAccuracyCircle />
+        <GeolocateControl position="top-right" trackUserLocation showAccuracyCircle />
         <GlobeControl position="top-right" />
         <TerrainControl position="top-right" source="terrain-dem" />
         <ScaleControl position="bottom-left" unit="metric" maxWidth={150} />
@@ -154,7 +153,7 @@ function MarkerTab() {
           onDragEnd={(e: any) => setPos({ lng: e.lngLat.lng, lat: e.lngLat.lat })} />
         <Marker longitude={90.42} latitude={23.84}>
           <div style={{ background: '#fff', padding: '2px 6px', borderRadius: 4 }}>custom HTML</div>
-          <Popup closeButton={false} anchor="bottom"><div>marker-attached popup</div></Popup>
+          <Popup longitude={90.42} latitude={23.84} closeButton={false} anchor="bottom"><div>marker-attached popup</div></Popup>
         </Marker>
         {show && (
           <Popup longitude={90.3938} latitude={23.8216} anchor="bottom" closeOnClick={false}
@@ -190,7 +189,9 @@ function SourcesTab() {
       <Map mapStyle={STYLE_URL} initialViewState={{ longitude: 90.4, latitude: 23.83, zoom: 12 }} style={{ width: '100%', height: '100%' }}
         onClick={(e: any) => { const f = e.target?.queryRenderedFeatures?.(e.point, { layers: ['points-layer'] }); setClicked(f?.[0]?.properties?.name ?? '') }}>
         <Source id="points" type="geojson" data={alt ? POLYGON : GEOJSON}>
-          <Layer id="points-layer" type={alt ? 'fill' : 'circle'} paint={alt ? { 'fill-color': '#088', 'fill-opacity': 0.4 } : { 'circle-radius': 10, 'circle-color': '#007cbf' }} />
+          {alt
+            ? <Layer id="points-layer" type="fill" paint={{ 'fill-color': '#088', 'fill-opacity': 0.4 }} />
+            : <Layer id="points-layer" type="circle" paint={{ 'circle-radius': 10, 'circle-color': '#007cbf' }} />}
         </Source>
         {canvasEl && (
           <CanvasSource id="my-canvas" canvas={canvasEl} animate
